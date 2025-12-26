@@ -1,16 +1,59 @@
-# React + Vite
+# Admission Bridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Admission Bridge** is a full-stack platform that helps students find and compare universities worldwide. It allows filtering universities by GPA, IELTS, tuition fees, country, and degree level. Users can also check their eligibility for each university.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Browse and search universities with real-time filters  
+- Compare universities based on eligibility criteria  
+- Check minimum GPA and IELTS requirements  
+- Easy-to-use interface with a responsive design  
+- Backend deployed on Vercel with PostgreSQL database  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:**  
+- React (Vite)  
+- Tailwind CSS  
+- Framer Motion (for animations)  
+- Axios (for API calls)  
+
+**Backend:**  
+- Node.js (Serverless API functions)  
+- PostgreSQL (Database)  
+- Vercel (API deployment)  
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+the-admission-bridge-client/
+│
+├── src/
+│   ├── components/
+│   ├── pages/Home.jsx
+│   
+│ 
+├── public/
+└── package.json
+```
+
+
+---
+
+## ⚡ Backend Setup
+
+1. Install dependencies:
+
+```bash
+cd server
+npm install pg dotenv
+
+---
+```
+**🚀Live URL:** [Live Site](https://the-admission-bridge-client.vercel.app/)
