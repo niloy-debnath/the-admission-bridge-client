@@ -21,20 +21,20 @@ export default function Home() {
   const { maxFee, gpa, ielts, country, degree } = filters;
 
   useEffect(() => {
+    const params = {};
+
+    if (filters.maxFee) params.maxFee = filters.maxFee;
+    if (filters.gpa) params.gpa = filters.gpa;
+    if (filters.ielts) params.ielts = filters.ielts;
+    if (filters.country) params.country = filters.country;
+    if (filters.degree) params.degree = filters.degree;
+
     axios
       .get("https://the-admission-bridge-server.vercel.app/api/universities", {
-        params: {
-          maxFee,
-          gpa,
-          ielts,
-          country,
-          degree,
-        },
+        params,
       })
       .then((res) => setUniversities(res.data))
-      .catch((err) => {
-        console.error("Axios error:", err);
-      });
+      .catch((err) => console.error(err));
   }, [filters]);
 
   return (
