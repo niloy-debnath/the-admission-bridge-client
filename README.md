@@ -1,4 +1,4 @@
-# Admission Bridge
+#✨ Admission Bridge
 
 **Admission Bridge** is a full-stack platform that helps students find and compare universities worldwide. It allows filtering universities by GPA, IELTS, tuition fees, country, and degree level. Users can also check their eligibility for each university.
 
